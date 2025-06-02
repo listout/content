@@ -60,7 +60,7 @@ product_directories = [
     'openembedded',
     'rhel8', 'rhel9', 'rhel10',
     'rhv4',
-    'sle12', 'sle15', 'slmicro5',
+    'sle12', 'sle15', 'slmicro5', 'slmicro6',
     'ubuntu1604', 'ubuntu1804', 'ubuntu2004', 'ubuntu2204', 'ubuntu2404'
 ]
 
@@ -232,6 +232,7 @@ FULL_NAME_TO_PRODUCT_MAPPING = {
     "SUSE Linux Enterprise 12": "sle12",
     "SUSE Linux Enterprise 15": "sle15",
     "SUSE Linux Enterprise Micro 5": "slmicro5",
+    "SUSE Linux Enterprise Micro 6": "slmicro6",
     "Ubuntu 16.04": "ubuntu1604",
     "Ubuntu 18.04": "ubuntu1804",
     "Ubuntu 20.04": "ubuntu2004",
@@ -310,7 +311,7 @@ MULTI_PLATFORM_MAPPING = {
     "multi_platform_rhel": ["rhel8", "rhel9", "rhel10"],
     "multi_platform_rhv": ["rhv4"],
     "multi_platform_sle": ["sle12", "sle15"],
-    "multi_platform_slmicro": ["slmicro5"],
+    "multi_platform_slmicro": ["slmicro5", "slmicro6"],
     "multi_platform_ubuntu": ["ubuntu1604", "ubuntu1804", "ubuntu2004",
                               "ubuntu2204", "ubuntu2404"],
     "multi_platform_openembedded": ["openembedded"],
