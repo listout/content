@@ -39,6 +39,7 @@ identifiers:
     cce@rhel9: CCE-83736-9
     cce@rhel10: CCE-88818-0
     cce@slmicro5: CCE-94099-9
+    cce@slmicro6: CCE-95097-2
 
 references:
     disa: CCI-000172,CCI-000130,CCI-000135,CCI-000169,CCI-002884
