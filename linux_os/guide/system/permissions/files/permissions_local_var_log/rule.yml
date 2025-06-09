@@ -61,11 +61,13 @@ template:
         excluded_files@slmicro5: ['*[bw]tmp', '*lastlog']
         excluded_files@ubuntu2004: ['history.log', 'eipp.log.xz', '*[bw]tmp', '*lastlog']
         excluded_files@ubuntu2204: ['history.log', 'eipp.log.xz', '*[bw]tmp', '*lastlog']
+        excluded_files@slmicro6: ['*[bw]tmp', '*lastlog']
         file_regex: '.*'
         filemode: '0640'
         filepath: /var/log/
         recursive@sle12: 'true'
         recursive@sle15: 'true'
+        recursive@slmicro6: 'true'
         recursive@slmicro5: 'true'
         recursive@ubuntu2004: 'true'
         recursive@ubuntu2204: 'true'
