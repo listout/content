@@ -8,7 +8,7 @@ description: |-
     all user sessions will terminate based on inactivity.
     The value of TMOUT should be exported and read only.
     The <tt>TMOUT</tt>
-    {{% if product in ["sle12", "sle15", "slmicro5"] %}}
+    {{% if product in ["sle12", "sle15", "slmicro5", "slmicro6"] %}}
     setting in <tt>/etc/profile.d/autologout.sh</tt> should read as follows:
     <pre>TMOUT={{{ xccdf_value("var_accounts_tmout") }}}</pre>
     readonly TMOUT
@@ -75,7 +75,7 @@ ocil_clause: 'value of TMOUT is not less than or equal to expected setting'
 ocil: |-
     Run the following command to ensure the <tt>TMOUT</tt> value is configured for all users
     on the system:
-    {{% if product in ["sle12", "sle15", "slmicro5"] %}}
+    {{% if product in ["sle12", "sle15", "slmicro5", "slmicro6"] %}}
     <pre>$ sudo grep TMOUT /etc/profile.d/autologout.sh</pre>
     {{% elif "ubuntu" in product %}}
     <pre>$ sudo grep TMOUT /etc/bash.bashrc /etc/profile /etc/profile.d/*.sh</pre>
@@ -84,7 +84,7 @@ ocil: |-
     {{% endif %}}
     The output should return the following:
     <pre>TMOUT={{{ xccdf_value("var_accounts_tmout") }}}</pre>
-    {{% if product in ["sle12", "sle15", "slmicro5", "ubuntu2004", "ubuntu2204", "ubuntu2404"] %}}
+    {{% if product in ["sle12", "sle15", "slmicro5", "slmicro6", "ubuntu2004", "ubuntu2204", "ubuntu2404"] %}}
     readonly TMOUT
     export TMOUT
     {{% endif %}}
