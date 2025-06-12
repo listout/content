@@ -25,6 +25,7 @@ severity: medium
 identifiers:
     cce@sle15: CCE-83280-8
     cce@slmicro5: CCE-93690-6
+    cce@slmicro5: CCE-94679-8
 
 references:
     disa: CCI-000068,CCI-000803,CCI-000877,CCI-001453,CCI-003123
